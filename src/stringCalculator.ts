@@ -9,9 +9,11 @@ export class StringCalculator {
   ) {}
 
   public Add(numbers: string): number {
+    console.warn(numbers)
     const nums = this.parser.parseInput(numbers);
     this.validator.validate(nums);
     this.addCallCount++;
+    console.log(nums)
     return nums
       .filter(n => n <= 1000) // Ignore numbers larger than 1000
       .reduce((sum, current) => sum + current, 0);

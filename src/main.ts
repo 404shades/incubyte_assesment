@@ -1,5 +1,5 @@
-import { DefaultInputParser } from './parsers/DefaultInputParser';
 import { StringCalculator } from './stringCalculator';
+import { DefaultInputParser } from './parsers/DefaultInputParser';
 import { DefaultNumberValidator } from './validators/DefaultNumberValidator';
 
 const calculator = new StringCalculator(
